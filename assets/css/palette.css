@@ -1,0 +1,41 @@
+/* Projectile's colors, built around the blue of its mark. Each token has a
+   light value and a --dark- counterpart for the dark theme. */
+:root {
+  --bg: #fafbfd;
+  --bg-alt: #f1f4fa;
+  --fg: #151823;
+  --muted: #555b6b;
+  --faint: #858b9a;
+  --accent: #254ddb;
+  --accent-strong: #254ddb;
+  --accent-ink: #ffffff;
+  --link: #254ddb;
+  --border: #dfe4ef;
+  --card: #ffffff;
+  --grid: rgb(21 24 35 / 0.045);
+  --glow: rgb(37 77 219 / 0.16);
+  --glow-soft: rgb(37 77 219 / 0.10);
+
+  /* the release band is dark in both themes */
+  --band-bg: #10142a;
+  --band-fg: #e9ecf5;
+  --band-muted: #a3aac0;
+  --band-card: #182040;
+  --band-border: #27305a;
+
+  --dark-bg: #0e1016;
+  --dark-bg-alt: #141722;
+  --dark-fg: #e9ecf5;
+  --dark-muted: #a3aac0;
+  --dark-faint: #767d92;
+  --dark-accent: #3d63f2;
+  --dark-accent-strong: #8ea2ff;
+  --dark-link: #8ea2ff;
+  --dark-border: #262b3b;
+  --dark-card: #161a26;
+  --dark-grid: rgb(255 255 255 / 0.035);
+  --dark-glow: rgb(61 99 242 / 0.22);
+  --dark-glow-soft: rgb(61 99 242 / 0.14);
+  --dark-band-bg: #0a0d1c;
+  --dark-band-card: #141a33;
+}

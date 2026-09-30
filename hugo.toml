@@ -7,8 +7,14 @@ disableKinds = ["taxonomy", "term", "section", "RSS", "sitemap", "404"]
 # --panicOnWarning); the fallback version covers it.
 ignoreLogs = ["github-fetch"]
 
+[module]
+  [[module.imports]]
+    path = "github.com/bbatsov/hugo-project-landing"
+
 [params]
   name = "Projectile"
+  logo = "img/projectile-mark.svg"
+  logoStyle = "mark"
   description = "Projectile is a project interaction library for Emacs: jump to any file, search and replace, build, test and run, and switch between projects with a few keystrokes."
   docs = "https://docs.projectile.mx/projectile/"
   github = "https://github.com/bbatsov/projectile"

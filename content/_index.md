@@ -11,14 +11,17 @@ featuresTitle: Everything, scoped to your project
 
 pillars:
   - title: Fast
+    icon: "&#187;"
     blurb: >-
       Indexing runs in the background, uses git and friends when they're
       around, and stays quick over TRAMP. Big repositories don't freeze Emacs.
   - title: Knows your project
+    icon: "&#9673;"
     blurb: >-
       Nearly a hundred project types, from Cargo and Gradle to Phoenix and
       Next.js, each with its own build, test and run commands.
   - title: Fits right in
+    icon: "&#10003;"
     blurb: >-
       Plain completing-read, so Vertico, Consult and friends just work, and a
       proper project.el backend for everything built on it.
