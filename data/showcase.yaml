@@ -1,0 +1,40 @@
+# The flagship features, shown as alternating rows with a GIF each.
+# `keys` is the binding that does the thing, shown next to the title.
+- title: Any file, a few keystrokes away
+  keys: s-p f
+  blurb: >-
+    Every file in the project, filtered as you type, with the ones you ignore
+    left out. It works the same in a monorepo, over TRAMP and in a project
+    you've never opened before.
+  media: media/find-file.gif
+  alt: Narrowing a project's files down to the one to open
+  docs: https://docs.projectile.mx/projectile/usage.html
+
+- title: Every project you work on
+  keys: s-p p
+  blurb: >-
+    Projectile remembers your projects, so switching is a matter of picking
+    one and then a file in it. Turn on session mode and each project gets its
+    own tab, with its buffers back where you left them.
+  media: media/switch-project.gif
+  alt: Switching to another project and picking a file in it
+  docs: https://docs.projectile.mx/projectile/projects.html
+
+- title: Search the whole project
+  keys: s-p s s
+  blurb: >-
+    One search command with ripgrep, grep and ag behind it (or your own
+    backend), always scoped to the project and its ignore rules.
+  media: media/search.gif
+  alt: Searching a project and stepping through the matches
+  docs: https://docs.projectile.mx/projectile/usage.html
+
+- title: Build, test and run
+  keys: s-p c t
+  blurb: >-
+    Projectile knows how to compile, test and run nearly a hundred kinds of
+    project, and remembers the commands you tweak for each one. It can even
+    run just the test at point.
+  media: media/test.gif
+  alt: Running a project's tests with a single key
+  docs: https://docs.projectile.mx/projectile/tasks.html

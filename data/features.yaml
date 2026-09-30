@@ -1,0 +1,33 @@
+# Everything else worth a mention, shown as a compact list of links.
+- name: Toggle between code and tests
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: Find files by kind
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: Project buffers
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: Named tasks
+  docs: https://docs.projectile.mx/projectile/tasks.html
+- name: Test at point
+  docs: https://docs.projectile.mx/projectile/tasks.html
+- name: Shells and REPLs per project
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: Sessions
+  docs: https://docs.projectile.mx/projectile/sessions.html
+- name: A tab per project
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: Monorepos and subprojects
+  docs: https://docs.projectile.mx/projectile/projects.html
+- name: Worktrees
+  docs: https://docs.projectile.mx/projectile/across_repositories.html
+- name: Project bookmarks
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: TODOs across the project
+  docs: https://docs.projectile.mx/projectile/usage.html
+- name: Flexible ignore rules
+  docs: https://docs.projectile.mx/projectile/ignoring.html
+- name: Remote projects over TRAMP
+  docs: https://docs.projectile.mx/projectile/indexing.html
+- name: Consult and Embark integration
+  docs: https://docs.projectile.mx/projectile/extensions.html
+- name: A project.el backend
+  docs: https://docs.projectile.mx/projectile/projectile_vs_project.html

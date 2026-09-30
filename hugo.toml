@@ -1,0 +1,28 @@
+baseURL = "https://projectile.mx/"
+locale = "en-US"
+title = "Projectile - project interaction for Emacs"
+disableKinds = ["taxonomy", "term", "section", "RSS", "sitemap", "404"]
+
+# A GitHub API hiccup shouldn't fail the deploy (CI builds with
+# --panicOnWarning); the fallback version covers it.
+ignoreLogs = ["github-fetch"]
+
+[params]
+  name = "Projectile"
+  description = "Projectile is a project interaction library for Emacs: jump to any file, search and replace, build, test and run, and switch between projects with a few keystrokes."
+  docs = "https://docs.projectile.mx/projectile/"
+  github = "https://github.com/bbatsov/projectile"
+  repo = "bbatsov/projectile"
+  sourceRepo = "https://github.com/bbatsov/projectile.mx"
+  copyright = "2011-{year} Bozhidar Batsov and Projectile contributors."
+  socialImage = "img/social.png"
+  # Used only when GitHub can't be reached at build time.
+  fallbackVersion = "3.4.0"
+
+[caches.getresource]
+  # the release and star count are fetched from GitHub; don't keep them forever
+  maxAge = "1h"
+
+[markup.goldmark.renderer]
+  # the page content is ours, so allow the odd bit of inline HTML (e.g. <kbd>)
+  unsafe = true

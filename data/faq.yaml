@@ -1,0 +1,36 @@
+- q: How is it different from project.el?
+  a: >-
+    <code>project.el</code> is the minimal project layer built into Emacs;
+    Projectile is a much bigger toolbox on top of the same idea - project
+    types with build and test commands, toggling between code and tests,
+    tasks, sessions, sibling projects and so on. They coexist: Projectile
+    registers itself as a <code>project.el</code> backend. There's a
+    <a href="https://docs.projectile.mx/projectile/projectile_vs_project.html">detailed comparison</a>
+    in the manual.
+
+- q: What counts as a project?
+  a: >-
+    Any version-controlled directory (git, Mercurial, Jujutsu, Sapling and
+    more), anything with a build file Projectile recognizes, or any directory
+    where you drop an empty <code>.projectile</code> file.
+
+- q: Does it work with my completion setup?
+  a: >-
+    Yes. Projectile uses the standard <code>completing-read</code>, so
+    Vertico, Consult, Ivy's <code>completing-read</code> support, fido-mode
+    and the default completion all work. Consult and Embark users get extra
+    integration on top.
+
+- q: Why doesn't it have a default prefix key?
+  a: >-
+    Because there's no good one to take. Pick whatever suits you - most people
+    go with <kbd>s-p</kbd> or <kbd>C-c p</kbd> - and <kbd>s-p m</kbd>
+    (or your prefix and <kbd>m</kbd>) shows everything else in a menu.
+
+- q: Is it fast on huge repositories?
+  a: >-
+    Yes. By default Projectile asks your version control system for the file
+    list, indexes in the background so a cold start doesn't freeze Emacs, and
+    caches the result. The manual's
+    <a href="https://docs.projectile.mx/projectile/indexing.html">indexing page</a>
+    covers the knobs.

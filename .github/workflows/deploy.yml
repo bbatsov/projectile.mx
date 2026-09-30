@@ -1,0 +1,65 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+  # The latest version and star count come from the GitHub API at build time,
+  # so rebuild weekly to keep them current. A Projectile release can also trigger a
+  # rebuild right away with a repository_dispatch event of this type.
+  schedule:
+    - cron: "17 5 * * 1"
+  repository_dispatch:
+    types: [projectile-release]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  # Bump deliberately: Hugo deprecates and removes things fairly often.
+  HUGO_VERSION: 0.167.0
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install Hugo
+        run: |
+          curl -fsSLo hugo.deb "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i hugo.deb
+      - id: pages
+        if: github.event_name != 'pull_request'
+        uses: actions/configure-pages@v6
+      - name: Build
+        # --panicOnWarning turns deprecations into failures, so we hear
+        # about them before the next Hugo bump removes something. The base
+        # URL comes from the Pages settings, so the site also works before
+        # the custom domain is attached.
+        run: |
+          hugo --minify --gc --panicOnWarning \
+            ${{ steps.pages.outputs.base_url && format('--baseURL {0}/', steps.pages.outputs.base_url) || '' }}
+        env:
+          HUGO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-pages-artifact@v5
+        if: github.event_name != 'pull_request'
+        with:
+          path: public
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5
