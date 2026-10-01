@@ -1,7 +1,7 @@
 - q: How is it different from project.el?
   a: >-
     <code>project.el</code> is the minimal project layer built into Emacs;
-    Projectile is a much bigger toolbox on top of the same idea - project
+    Projectile offers a lot more on top of the same idea - project
     types with build and test commands, toggling between code and tests,
     tasks, sessions, sibling projects and so on. They coexist: Projectile
     registers itself as a <code>project.el</code> backend. There's a
@@ -33,7 +33,7 @@
     list, indexes in the background so a cold start doesn't freeze Emacs, and
     caches the result. The manual's
     <a href="https://docs.projectile.mx/projectile/indexing.html">indexing page</a>
-    covers the knobs.
+    covers all the relevant options.
 
 - q: Who's behind it?
   a: >-

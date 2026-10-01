@@ -67,9 +67,9 @@
 - title: Related projects
   keys: s-p n p
   blurb: >-
-    Projects rarely live alone. Jump between the siblings of the one you're
-    in, or the other worktrees of the same repository, without wading
-    through every project you've ever opened.
+    Projects often come in groups. Jump between the siblings of the one
+    you're in, or the other worktrees of the same repository, without having
+    to pick them out of every project you've ever worked on.
   media: media/siblings.webp
   alt: A list of CIDER's sibling projects to switch to
   caption: CIDER's siblings, and nothing else.

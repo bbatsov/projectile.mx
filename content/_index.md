@@ -1,17 +1,16 @@
 ---
 tagline: Project interaction for Emacs
 intro: >-
-  Projectile knows where your project starts and ends. Jump to any file in it,
-  search it, run its tests, and hop over to the next project, all from a
-  couple of keystrokes and without leaving whatever you were doing. It's been
-  doing that since 2011.
+  In a nutshell - Projectile knows where your project starts and ends. You
+  can jump to any file in it, search it, run its tests and switch to another
+  project with just a couple of keystrokes. It's been doing this since 2011.
 install: M-x package-install RET projectile RET
 heroMedia: media/switch-project.gif
 heroAlt: Switching to another project and narrowing its files down to the one to open
 featuresTitle: What it's like
 restIntro: >-
-  Projectile is a big toolbox, and the menu (s-p m) lists all of it. A few of
-  the things that didn't fit above:
+  Projectile packs a lot of features, and its menu (s-p m) lists all of them.
+  Here are a few more that didn't fit above:
 
 steps:
   - >-
@@ -26,20 +25,22 @@ steps:
   - >-
     Open any file in a git repository (or any directory with a
     <code>.projectile</code> file in it) and press <kbd>s-p f</kbd>. That's
-    the whole idea. <kbd>s-p m</kbd> shows everything else.
+    pretty much it - <kbd>s-p m</kbd> will show you everything else.
 stepsNote: >-
   The [getting started guide](https://docs.projectile.mx/projectile/getting_started.html)
-  goes from a fresh install to a setup you'll keep in a few minutes.
+  will take you from a fresh install to a setup you're happy with in a few
+  minutes.
 outro: Keep hacking!
 ---
 
 Projectile started in the summer of 2011, simply because I was frustrated that
 `find-file-in-project` didn't work on Windows. I've been its primary author
-and maintainer ever since, and it's still the project I reach for every single
-day.
+and maintainer ever since, and it remains one of my favorite projects (and the
+one I use the most).
 
 Fifteen years and three major versions later, it knows nearly a hundred kinds
 of project, indexes them without freezing Emacs, and gets along fine with the
-built-in `project.el`. It's been shaped by
-[more than 400 contributors](https://github.com/bbatsov/projectile/graphs/contributors)
-and is funded by the people who use it.
+built-in `project.el`.
+[More than 400 people](https://github.com/bbatsov/projectile/graphs/contributors)
+have contributed to it over the years, and its development is funded by its
+users.
