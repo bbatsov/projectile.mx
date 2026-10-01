@@ -34,3 +34,9 @@
     caches the result. The manual's
     <a href="https://docs.projectile.mx/projectile/indexing.html">indexing page</a>
     covers the knobs.
+
+- q: Who's behind it?
+  a: >-
+    Me, Bozhidar Batsov. I started Projectile in 2011 and I've been its primary
+    author and maintainer ever since. More than 400 people have contributed
+    to it over the years, and it's funded by the people who use it.

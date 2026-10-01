@@ -1,11 +1,11 @@
 baseURL = "https://projectile.mx/"
 locale = "en-US"
 title = "Projectile - project interaction for Emacs"
-disableKinds = ["taxonomy", "term", "section", "RSS", "sitemap", "404"]
+disableKinds = ["taxonomy", "term", "section", "RSS", "sitemap"]
 
 # A GitHub API hiccup shouldn't fail the deploy (CI builds with
 # --panicOnWarning); the fallback version covers it.
-ignoreLogs = ["github-fetch"]
+ignoreLogs = ["github-fetch", "news-feed"]
 
 [module]
   [[module.imports]]
@@ -13,6 +13,12 @@ ignoreLogs = ["github-fetch"]
 
 [params]
   name = "Projectile"
+  buffer = "projectile.mx"
+  modeName = "Projectile"
+  echo = "Every project is just s-p p away!"
+  newsFeed = "https://metaredux.com/feed.xml"
+  newsTag = "Projectile"
+  newsCount = 8
   logo = "img/projectile-mark.svg"
   logoStyle = "mark"
   description = "Projectile is a project interaction library for Emacs: jump to any file, search and replace, build, test and run, and switch between projects with a few keystrokes."

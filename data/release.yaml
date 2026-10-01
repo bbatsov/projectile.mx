@@ -1,40 +1,4 @@
-# The feature release (or release series) the page spotlights. Edit this only
-# for feature releases: the latest version (patch releases included) is looked
-# up on GitHub when the site is built.
-series: "3"
-title: "Projectile 3"
-date: 2026-07-01
-summary: >-
-  For its 15th birthday Projectile got its biggest overhaul in years: a menu
-  for every command, asynchronous indexing, one search and one shell command
-  with pluggable backends, and a pile of new ways to move around your
-  projects in the releases since.
+# The release series the page links to in the opening.
+series: "3.0"
+title: "Projectile 3.0"
 announcement: https://metaredux.com/posts/2026/07/01/projectile-3-0.html
-changelog: https://github.com/bbatsov/projectile/blob/master/CHANGELOG.md
-
-# Three or four headline changes, each with a screenshot or GIF under
-# static/media/. Cards crop their image to 2:1 from the top; set
-# `focus: bottom` when the interesting part is at the bottom instead.
-highlights:
-  - title: A menu for everything
-    blurb: <kbd>s-p m</kbd> opens a transient menu with every command, and switches for regexps, other windows and more.
-    media: media/dispatch.webp
-    focus: bottom
-    docs: https://docs.projectile.mx/projectile/usage.html
-
-  - title: Replace, with a preview
-    blurb: <kbd>s-p R</kbd> shows every match before anything changes, lets you skip the ones you don't want, and undoes the whole replace in one go.
-    media: media/replace.webp
-    focus: bottom
-    docs: https://docs.projectile.mx/projectile/usage.html
-
-  - title: The project at a glance
-    blurb: <kbd>s-p P</kbd> summarises a project - its type, size, branch and state - and <kbd>s-p H</kbd> explains how Projectile sees it.
-    media: media/dashboard.webp
-    docs: https://docs.projectile.mx/projectile/usage.html
-
-  - title: Related projects
-    blurb: Jump between the sibling projects of the one you're in, and the other worktrees of the same repository.
-    media: media/siblings.webp
-    focus: bottom
-    docs: https://docs.projectile.mx/projectile/across_repositories.html

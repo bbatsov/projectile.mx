@@ -1,13 +1,13 @@
-# The flagship features, shown as alternating rows with a GIF each.
-# `keys` is the binding that does the thing, shown next to the title.
+# The flagship features, each with a GIF or screenshot and a caption.
 - title: Any file, a few keystrokes away
   keys: s-p f
   blurb: >-
-    Every file in the project, filtered as you type, with the ones you ignore
-    left out. It works the same in a monorepo, over TRAMP and in a project
-    you've never opened before.
+    Every file in the project, narrowed down as you type, with the ones you
+    ignore left out. It's just as fast in a huge monorepo or over TRAMP as in
+    a toy project, because the indexing happens in the background.
   media: media/find-file.gif
   alt: Narrowing a project's files down to the one to open
+  caption: Two words, and the right file out of a few hundred.
   docs: https://docs.projectile.mx/projectile/usage.html
 
 - title: Every project you work on
@@ -18,6 +18,7 @@
     own tab, with its buffers back where you left them.
   media: media/switch-project.gif
   alt: Switching to another project and picking a file in it
+  caption: From CIDER to Orchard, and straight to the file I wanted.
   docs: https://docs.projectile.mx/projectile/projects.html
 
 - title: Search the whole project
@@ -27,6 +28,7 @@
     backend), always scoped to the project and its ignore rules.
   media: media/search.gif
   alt: Searching a project and stepping through the matches
+  caption: Every use of cider-jack-in-clj, one n at a time.
   docs: https://docs.projectile.mx/projectile/usage.html
 
 - title: Build, test and run
@@ -37,4 +39,38 @@
     run just the test at point.
   media: media/test.gif
   alt: Running a project's tests with a single key
+  caption: A Go project's tests, without remembering how Go runs tests.
   docs: https://docs.projectile.mx/projectile/tasks.html
+
+- title: A menu for everything
+  keys: s-p m
+  blurb: >-
+    You don't have to memorize anything. The menu lists every command, with
+    switches for regexps, case sensitivity and opening things in another
+    window.
+  media: media/dispatch.webp
+  alt: The Projectile dispatch menu listing its commands
+  caption: Everything Projectile can do, one key away.
+  docs: https://docs.projectile.mx/projectile/usage.html
+
+- title: Replace, with a preview
+  keys: s-p R
+  blurb: >-
+    See every match before anything changes, skip the ones you don't want,
+    apply the rest, and undo the whole replace in one go if you change your
+    mind.
+  media: media/replace.webp
+  alt: A replace preview listing every match with the replacement shown inline
+  caption: Six matches in two files, each one shown before it's touched.
+  docs: https://docs.projectile.mx/projectile/usage.html
+
+- title: Related projects
+  keys: s-p n p
+  blurb: >-
+    Projects rarely live alone. Jump between the siblings of the one you're
+    in, or the other worktrees of the same repository, without wading
+    through every project you've ever opened.
+  media: media/siblings.webp
+  alt: A list of CIDER's sibling projects to switch to
+  caption: CIDER's siblings, and nothing else.
+  docs: https://docs.projectile.mx/projectile/across_repositories.html

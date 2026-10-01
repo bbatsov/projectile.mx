@@ -1,41 +1,41 @@
-/* Projectile's colors, built around the blue of its mark. Each token has a
-   light value and a --dark- counterpart for the dark theme. */
+/* Projectile's colors: Emacs's Modus themes (modus-operandi for light,
+   modus-vivendi for dark) with the blue of Projectile's mark as the accent,
+   used where Emacs would use the region or the cursor. Each token has a
+   --dark- counterpart that main.css swaps in. */
 :root {
-  --bg: #fafbfd;
-  --bg-alt: #f1f4fa;
-  --fg: #151823;
-  --muted: #555b6b;
-  --faint: #858b9a;
+  --bg: #ffffff;
+  --bg-dim: #f2f2f2;
+  --fg: #000000;
+  --fg-dim: #595959;
+  --border: #9f9f9f;
+  --blue: #0031a9;
+  --magenta: #721045;
+  --green: #006800;
+  --cyan: #005e8b;
+  --link: #3548cf;
   --accent: #254ddb;
-  --accent-strong: #254ddb;
-  --accent-ink: #ffffff;
-  --link: #254ddb;
-  --border: #dfe4ef;
-  --card: #ffffff;
-  --grid: rgb(21 24 35 / 0.045);
-  --glow: rgb(37 77 219 / 0.16);
-  --glow-soft: rgb(37 77 219 / 0.10);
+  --mode-line-bg: #c8c8c8;
+  --mode-line-fg: #000000;
+  --mode-line-border: #5a5a5a;
+  --region: #b7c6ff;
+  --region-fg: #000000;
+  --key-bg: #f2f2f2;
 
-  /* the release band is dark in both themes */
-  --band-bg: #10142a;
-  --band-fg: #e9ecf5;
-  --band-muted: #a3aac0;
-  --band-card: #182040;
-  --band-border: #27305a;
-
-  --dark-bg: #0e1016;
-  --dark-bg-alt: #141722;
-  --dark-fg: #e9ecf5;
-  --dark-muted: #a3aac0;
-  --dark-faint: #767d92;
-  --dark-accent: #3d63f2;
-  --dark-accent-strong: #8ea2ff;
-  --dark-link: #8ea2ff;
-  --dark-border: #262b3b;
-  --dark-card: #161a26;
-  --dark-grid: rgb(255 255 255 / 0.035);
-  --dark-glow: rgb(61 99 242 / 0.22);
-  --dark-glow-soft: rgb(61 99 242 / 0.14);
-  --dark-band-bg: #0a0d1c;
-  --dark-band-card: #141a33;
+  --dark-bg: #000000;
+  --dark-bg-dim: #1e1e1e;
+  --dark-fg: #ffffff;
+  --dark-fg-dim: #989898;
+  --dark-border: #646464;
+  --dark-blue: #2fafff;
+  --dark-magenta: #feacd0;
+  --dark-green: #44bc44;
+  --dark-cyan: #00d3d0;
+  --dark-link: #79a8ff;
+  --dark-accent: #8ea2ff;
+  --dark-mode-line-bg: #505050;
+  --dark-mode-line-fg: #ffffff;
+  --dark-mode-line-border: #959595;
+  --dark-region: #2c46b8;
+  --dark-region-fg: #ffffff;
+  --dark-key-bg: #1e1e1e;
 }

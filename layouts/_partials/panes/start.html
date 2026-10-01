@@ -1,0 +1,14 @@
+{{- /* A project root in dired, with the .projectile file that marks a
+       directory as a project when there's no repository to go by. */ -}}
+{{- $body := `  <span class="dir">/home/you/projects/acme-billing:</span>
+  drwxr-xr-x  9 you  staff  288 Oct  1 11:07 <span class="dir">.</span>
+  -rw-r--r--  1 you  staff    0 Oct  1 11:07 <span class="marker">.projectile</span>
+  drwxr-xr-x  3 you  staff   96 Sep 30 08:00 <span class="dir">cmd</span>
+  -rw-r--r--  1 you  staff   40 Sep 30 08:00 <span class="file">go.mod</span>
+  drwxr-xr-x  4 you  staff  128 Sep 30 08:00 <span class="dir">invoice</span>
+  -rw-r--r--  1 you  staff   74 Sep 30 08:00 <span class="file">README.md</span>
+  drwxr-xr-x  4 you  staff  128 Sep 30 08:00 <span class="dir">tax</span>
+
+<span class="comment">;; Projectile found a Go project here, with
+;; go test ./... as its test command.</span>` }}
+{{ partial "buffer.html" (dict "name" "acme-billing" "mode" "Dired by name Projectile[acme-billing:go]" "state" "-:%%-" "position" "All" "body" $body) }}

@@ -1,0 +1,18 @@
+# The news archive. Posts tagged Projectile in the Meta Redux feed are picked
+# up automatically when the site is built; add one here to keep it in the
+# list for good, or for news from anywhere else.
+- date: 2026-08-13
+  title: Projectile 3.4
+  url: https://metaredux.com/posts/2026/08/13/projectile-3-4.html
+- date: 2026-07-27
+  title: Projectile 3.3
+  url: https://metaredux.com/posts/2026/07/27/projectile-3-3.html
+- date: 2026-07-18
+  title: Projectile 3.2
+  url: https://metaredux.com/posts/2026/07/18/projectile-3-2.html
+- date: 2026-07-04
+  title: Projectile 3.1
+  url: https://metaredux.com/posts/2026/07/04/projectile-3-1.html
+- date: 2026-07-01
+  title: Projectile 3.0
+  url: https://metaredux.com/posts/2026/07/01/projectile-3-0.html

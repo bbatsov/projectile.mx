@@ -1,0 +1,6 @@
+{{- $body := `<span class="comment">;; M-x package-install RET projectile RET</span>
+Contacting host: elpa.nongnu.org:443
+Package refresh done
+Package ‘projectile’ installed.
+Projectile mode enabled in current buffer` }}
+{{ partial "buffer.html" (dict "name" "*Messages*" "mode" "Messages" "state" "U:%*-" "position" "Bot" "body" $body) }}

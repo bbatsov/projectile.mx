@@ -8,29 +8,26 @@ help:
   - name: Troubleshooting
     url: https://docs.projectile.mx/projectile/troubleshooting.html
     blurb: When something isn't working the way you expect.
-
-supportBlurb: >-
-  Projectile is a labor of love, kept going by volunteers and its users'
-  support. If it saves you time, consider chipping in.
-
-support:
-  - name: GitHub Sponsors
-    url: https://github.com/sponsors/bbatsov
-  - name: Patreon
-    url: https://www.patreon.com/bbatsov
-  - name: PayPal
-    url: https://www.paypal.me/bbatsov
-
-ecosystem:
-  - name: The manual
-    url: https://docs.projectile.mx/projectile/
-    blurb: Everything Projectile can do, and how to configure it.
   - name: Cheatsheet
     url: https://docs.projectile.mx/projectile/cheatsheet.html
     blurb: Every command and keybinding on one page.
-  - name: Extensions
-    url: https://docs.projectile.mx/projectile/extensions.html
-    blurb: Packages that build on Projectile.
-  - name: Coming from project.el
-    url: https://docs.projectile.mx/projectile/migrating_from_project_el.html
-    blurb: What maps to what.
+
+supportBlurb: >-
+  Projectile is free, but keeping it going takes a lot of time. If it makes
+  your work a little nicer every day, consider chipping in:
+
+# The funding platforms; the recommended one comes first.
+support:
+  - name: GitHub Sponsors
+    url: https://github.com/sponsors/bbatsov
+    recommended: true
+    blurb: monthly or one-time, right from your GitHub account
+  - name: Liberapay
+    url: https://liberapay.com/bbatsov
+    blurb: recurring donations, run as a non-profit
+  - name: Patreon
+    url: https://www.patreon.com/bbatsov
+    blurb: monthly memberships
+  - name: PayPal
+    url: https://www.paypal.me/bbatsov
+    blurb: a one-off donation

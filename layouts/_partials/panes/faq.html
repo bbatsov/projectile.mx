@@ -1,0 +1,16 @@
+{{- $keys := slice
+  (slice "s-p f" "projectile-find-file")
+  (slice "s-p p" "projectile-switch-project")
+  (slice "s-p b" "projectile-switch-to-buffer")
+  (slice "s-p s s" "projectile-search")
+  (slice "s-p r" "projectile-replace")
+  (slice "s-p t" "projectile-toggle-between-implementation-and-test")
+  (slice "s-p c c" "projectile-compile-project")
+  (slice "s-p c t" "projectile-test-project")
+  (slice "s-p k" "projectile-kill-buffers")
+  (slice "s-p m" "projectile-dispatch") }}
+{{- $lines := slice "projectile-command-map bindings worth learning first," "with s-p as the prefix:" "" `<span class="heading">key         binding</span>` `<span class="heading">---         -------</span>` }}
+{{- range $keys }}
+  {{- $lines = $lines | append (printf `<span class="key">%-11s</span> <span class="command">%s</span>` (index . 0) (index . 1)) }}
+{{- end }}
+{{ partial "buffer.html" (dict "name" "*Help*" "mode" "Help" "state" "U:%%-" "position" "All" "body" (delimit $lines "\n")) }}
