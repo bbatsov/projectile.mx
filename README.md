@@ -42,6 +42,20 @@ colors.
   `fallbackVersion` in `hugo.toml`, which is only used when GitHub can't be
   reached during the build.
 
+## Re-recording the screencasts
+
+The GIFs and screenshots in `static/media/` are recorded by
+`capture/projectile.el`, which drives a real Emacs through a few real projects
+(opened read-only) and the small Go project in `capture/fixture/`. With a
+Projectile checkout, a GUI Emacs, Go and ImageMagick around:
+
+```sh
+PROJECTILE_DIR=~/projects/projectile ./capture/run.sh
+```
+
+A small Emacs frame takes over the screen for a couple of minutes, so don't
+type while it's up.
+
 ## Running it locally
 
 ```sh
